@@ -1,0 +1,67 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100%;
+      }
+
+      form {
+        width: 300px;
+        margin: 100px fle;
+        text-align: center;
+      }
+
+      input {
+        display: block;
+        margin: 10px auto;
+        width: 250px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Inicie Sessão</h1>
+      <input type="text" placeholder="Login" id="Login" />
+      <input type="password" placeholder="Senha" id="Senha" />
+      <input type="submit" onclick="logar(); return false" />
+    </form>
+
+    <script>
+      function logar() {
+        var login = document.getElementById("login").velue;
+        var senha = document.getElementById("senha").velue;
+
+        if (login == "Nicolas" && senha == "0508") {
+          alert("Sucesso");
+          location.href = "home.html";
+        } else {
+          alert("Usuário ou senha incorreto");
+        }
+      }
+    </script>
+
+    <section>
+      <div>
+        <img
+          src="src/assets/images/louis-vuitton-petit-sac-plat-outros-canvas-monogram-carteiras--M81341_PM1_Ambiance view 1.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="src/assets/images/Captura de tela 2025-10-15 202636 1.png"
+          alt=""
+        />
+      </div>
+    </section>
+  </body>
+</html>
