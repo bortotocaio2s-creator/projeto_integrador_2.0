@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER ------------------ */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* LAYOUT ------------------ */
+.layout {
+    display: flex;
+    max-width: 1400px;
+    margin: 30px auto;
+    gap: 30px;
+}
+
+/* SIDEBAR ------------------ */
+.sidebar {
+    width: 260px;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+}
+
+.sidebar h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.filter-block {
+    margin-bottom: 25px;
+}
+
+.filter-title {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-block label {
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* PRODUTOS ------------------ */
+.products {
+    flex: 2;
+}
+
+.product-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.product-card:hover {
+    border-color: #000;
+    transform: translateY(-4px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.product-card h4 {
+    margin: 12px 0 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.price {
+    color: #008000;
+    font-weight: bold;
+}
+
+/* FOOTER ------------------ */
+.footer {
+    background: #111;
+    padding: 40px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+}
+
+.footer h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer p {
+    margin-bottom: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer p:hover {
+    color: #fff;
+}
+
+/* RESPONSIVIDADE ------------------ */
+@media (max-width: 900px) {
+    .layout {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+    }
+}

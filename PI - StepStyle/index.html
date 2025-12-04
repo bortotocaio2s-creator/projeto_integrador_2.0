@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Step Style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Step Style</div>
+      <nav class="nav">
+        <a href="#">Início</a>
+        <a href="#">Vendas</a>
+        <a href="#">Roupas</a>
+        <a href="#">Calçados</a>
+        <a href="#">Acessórios</a>
+      </nav>
+      <div class="icons">
+        <button class="icon-btn">🔍</button>
+        <button class="icon-btn">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <img src="./src/assets/images/Imagem_inicial.avif" alt="hero" class="hero-bg" />
+    <div class="container hero-content">
+      <h1>Descubra Seu Estilo Único</h1>
+      <p>Na Step Style, você encontra as melhores peças com preços que cabem no seu bolso.</p>
+      <div class="actions">
+        <a href="#" class="btn primary">Ver Coleção</a>
+        <a href="#" class="btn ghost">Nossas Categorias</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container main">
+
+    <section class="categories">
+      <h2>Explore Nossas Categorias</h2>
+      <p class="muted">Escolha entre roupas, calçados e acessórios preparados para você.</p>
+
+      <div class="cats-grid">
+        <article class="cat-card">
+          <img src="./src/assets/images/Camisa_adidas.webp" alt="Camisa" />
+          <button onclick="window.location.href='segundo.html'">
+    <div class="cat-info">
+    <h3>Camisa</h3>
+    <p>Camisas de manga longa, curta e muito mais</p>
+  </div>
+</button>
+        </article>
+
+        <article class="cat-card">
+          <img src="./src/assets/images/Blusa_Lacoste.webp" alt="Blusas" />
+          <div class="cat-info">
+            <h3>Blusas</h3>
+            <p>Para inverno ou apenas pelo estilo</p>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <img src="./src/assets/images/Joias.avif" alt="Joias" />
+          <div class="cat-info">
+            <h3>Joias</h3>
+            <p>Brincos, colares e pulseiras</p>
+          </div>
+        </article>
+
+        <article class="cat-card">
+          <img src="./src/assets/images/Tenis_jordan.jpg" alt="Botas" />
+          <div class="cat-info">
+            <h3>Tenis</h3>
+            <p>Estilos Streetwear</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="featured">
+      <h2>Produtos em Destaque</h2>
+      <div class="products-grid" id="productsGrid">
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="benefit">
+        <div class="icon">🚚</div>
+        <h4>Frete Grátis</h4>
+        <p>Para compras acima de R$150,00</p>
+      </div>
+      <div class="benefit">
+        <div class="icon">✅</div>
+        <h4>Garantia de Qualidade</h4>
+        <p>Produtos selecionados com garantia</p>
+      </div>
+      <div class="benefit">
+        <div class="icon">🔁</div>
+        <h4>Troca Fácil</h4>
+        <p>Até 30 dias após a compra</p>
+      </div>
+    </section>
+    <section class="newsletter">
+      <h3>Fique por Dentro das Novidades</h3>
+      <p class="muted">Receba ofertas e lançamentos diretamente no seu e-mail.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Obrigado!');">
+        <input type="email" placeholder="Seu melhor e-mail" required />
+        <button class="btn primary">Cadastrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Step Style</h4>
+        <p>Roupas com estilo e atitude.</p>
+      </div>
+      <div>
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Promoções</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>contato@stepstyle.com</p>
+        <p>(11) 98532468</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Stepstyle. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
